@@ -754,3 +754,9 @@
 2025-12-25 23:49:15,455 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
 2025-12-25 23:49:15,475 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2025-12-25 23:49:15,481 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\stalweka\OneDrive - Cisco\Desktop\foodiehub\backend\foodiehub-backend.zip_expanded\foodiehub-backend\src\test\resources
+2025-12-25 23:53:35,268 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-12-25 23:53:35,269 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-12-25 23:53:35,271 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\stalweka\OneDrive - Cisco\Desktop\foodiehub\backend\foodiehub-backend.zip_expanded\foodiehub-backend\src\test\resources
+2025-12-25 23:53:38,214 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-12-25 23:53:38,215 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-12-25 23:53:38,218 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\stalweka\OneDrive - Cisco\Desktop\foodiehub\backend\foodiehub-backend.zip_expanded\foodiehub-backend\src\test\resources
