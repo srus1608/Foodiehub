@@ -743,3 +743,14 @@
 2025-12-24 00:00:57,910 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\stalweka\OneDrive - Cisco\Desktop\foodiehub\backend\foodiehub-backend.zip_expanded\foodiehub-backend\src\test\resources
 2025-12-24 00:01:43,119 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2025-12-25 21:32:20,501 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2025-12-25 23:49:12,873 [Worker-37: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-12-25 23:49:13,611 [Worker-37: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.foodiehub:foodiehub-backend:0.0.1-SNAPSHOT @ C:\Users\stalweka\OneDrive - Cisco\Desktop\foodiehub\backend\foodiehub-backend.zip_expanded\foodiehub-backend\pom.xml.
+2025-12-25 23:49:14,339 [Worker-37: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /foodiehub-backend/src/main/java
+2025-12-25 23:49:14,343 [Worker-37: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /foodiehub-backend/src/main/resources
+2025-12-25 23:49:14,344 [Worker-37: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /foodiehub-backend/src/main/resources
+2025-12-25 23:49:14,346 [Worker-37: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /foodiehub-backend/src/test/java
+2025-12-25 23:49:14,348 [Worker-37: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /foodiehub-backend/src/test/resources
+2025-12-25 23:49:14,751 [Worker-37: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 1.00 sec, update config takes 0.00 sec 
+2025-12-25 23:49:15,455 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-12-25 23:49:15,475 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-12-25 23:49:15,481 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\stalweka\OneDrive - Cisco\Desktop\foodiehub\backend\foodiehub-backend.zip_expanded\foodiehub-backend\src\test\resources
