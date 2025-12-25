@@ -22,6 +22,8 @@ It allows users to manage **restaurants, dishes, and orders** in a professional,
 - **Database:** MySQL  
 - **Build Tool:** Maven for backend  
 - **Version Control:** Git/GitHub
+- **Containerization:** Docker
+  **Cloud:** AWS EC2
 
 
 ## 💻 Backend Setup
@@ -77,6 +79,47 @@ POST /api/dishes/restaurant/{id} → Add dish
 GET /api/orders → Get all orders
 
 POST /api/orders → Place order  
+
+## Local Setup / Running without Docker
+
+## Backend:
+
+cd backend
+java -jar target/foodiehub-backend-0.0.1-SNAPSHOT.jar
+
+
+Make sure application.properties has:
+
+server.port=8080
+server.address=0.0.0.0
+
+
+## Frontend:
+
+cd frontend
+npm install
+ng serve --host 0.0.0.0 --port 4200
+
+
+Update Angular service URLs to point to backend:
+
+backendUrl = "http://<EC2-PUBLIC-DNS>:8080/api/restaurants";
+
+## Docker Setup
+
+## Backend Docker:
+
+cd backend
+sudo docker build -t foodiehub-backend .
+sudo docker run -d -p 8080:8080 foodiehub-backend
+
+
+## Frontend Docker:
+
+cd frontend
+sudo docker build -t foodiehub-frontend .
+sudo docker run -d -p 80:80 foodiehub-frontend
+
 
 ## 🚀 How to Use
 
