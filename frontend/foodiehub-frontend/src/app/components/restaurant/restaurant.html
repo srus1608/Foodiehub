@@ -1,0 +1,47 @@
+<div class="text-center mb-4">
+  <h1>FoodieHub Restaurants</h1>
+</div>
+
+<!-- Add Restaurant Form -->
+<div class="card mb-4">
+  <div class="card-header bg-primary text-white">Add New Restaurant</div>
+  <div class="card-body row g-3">
+    <div class="col-md-4">
+      <input type="text" class="form-control" placeholder="Name" [(ngModel)]="restaurantObj.name">
+    </div>
+    <div class="col-md-4">
+      <input type="text" class="form-control" placeholder="Location" [(ngModel)]="restaurantObj.location">
+    </div>
+    <div class="col-md-4">
+      <input type="text" class="form-control" placeholder="Cuisine" [(ngModel)]="restaurantObj.cuisine">
+    </div>
+    <div class="col-12 mt-2">
+      <button class="btn btn-success w-100" (click)="saveRestaurant()">Add Restaurant</button>
+    </div>
+  </div>
+</div>
+
+<!-- Restaurant Table -->
+<div class="card">
+  <div class="card-header bg-secondary text-white">Restaurant List</div>
+  <div class="card-body table-responsive">
+    <table class="table table-bordered table-hover">
+      <thead class="table-dark">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Location</th>
+          <th>Cuisine</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let r of restaurants">
+          <td>{{r.id}}</td>
+          <td>{{r.name}}</td>
+          <td>{{r.location}}</td>
+          <td>{{r.cuisine}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

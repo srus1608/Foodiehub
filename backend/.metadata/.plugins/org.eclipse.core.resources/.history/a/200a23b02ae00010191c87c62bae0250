@@ -1,0 +1,5 @@
+package com.foodiehub_backend.service;
+
+public interface OrderService {
+
+}

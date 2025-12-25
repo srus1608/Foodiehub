@@ -1,0 +1,50 @@
+<div class="text-center mb-4">
+  <h1>Order Management</h1>
+</div>
+
+<div class="card mb-4">
+  <div class="card-header bg-primary text-white">Place Order</div>
+  <div class="card-body row g-3">
+    <div class="col-md-4">
+      <input type="number" class="form-control" placeholder="Restaurant ID" [(ngModel)]="orderObj.restaurantId">
+    </div>
+    <div class="col-md-4">
+      <input type="number" class="form-control" placeholder="Dish ID" [(ngModel)]="orderObj.dishId">
+    </div>
+    <div class="col-md-4">
+      <input type="number" class="form-control" placeholder="Quantity" [(ngModel)]="orderObj.quantity">
+    </div>
+    <div class="col-12 mt-2">
+      <button class="btn btn-success w-100" (click)="placeOrder()">Place Order</button>
+    </div>
+  </div>
+</div>
+
+<!-- Order Table -->
+<div class="card">
+  <div class="card-header bg-secondary text-white">All Orders</div>
+  <div class="card-body table-responsive">
+    <table class="table table-bordered table-hover">
+      <thead class="table-dark">
+        <tr>
+          <th>ID</th>
+          <th>Restaurant</th>
+          <th>Dish</th>
+          <th>Quantity</th>
+          <th>Status</th>
+          <th>Total Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let o of orders">
+          <td>{{o.id}}</td>
+          <td>{{o.restaurant.name}}</td>
+          <td>{{o.dish.name}}</td>
+          <td>{{o.quantity}}</td>
+          <td>{{o.status}}</td>
+          <td>{{o.totalPrice}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,58 @@
+<div class="text-center mb-4">
+  <h1>Dish Management</h1>
+</div>
+
+<!-- Restaurant ID input -->
+<div class="mb-3 row">
+  <label class="col-sm-2 col-form-label">Restaurant ID:</label>
+  <div class="col-sm-4">
+    <input type="number" class="form-control" [(ngModel)]="restaurantId" (change)="loadDishes()">
+  </div>
+</div>
+
+<!-- Add Dish Form -->
+<div class="card mb-4">
+  <div class="card-header bg-primary text-white">Add New Dish</div>
+  <div class="card-body row g-3">
+    <div class="col-md-3">
+      <input type="number" class="form-control" placeholder="Restaurant ID" [(ngModel)]="dishObj.restaurantId">
+    </div>
+    <div class="col-md-3">
+      <input type="text" class="form-control" placeholder="Dish Name" [(ngModel)]="dishObj.name">
+    </div>
+    <div class="col-md-3">
+      <input type="number" class="form-control" placeholder="Price" [(ngModel)]="dishObj.price">
+    </div>
+    <div class="col-md-3">
+      <input type="text" class="form-control" placeholder="Category" [(ngModel)]="dishObj.category">
+    </div>
+    <div class="col-12 mt-2">
+      <button class="btn btn-success w-100" (click)="saveDish()">Add Dish</button>
+    </div>
+  </div>
+</div>
+
+<!-- Dish Table -->
+<div class="card">
+  <div class="card-header bg-secondary text-white">Dish List</div>
+  <div class="card-body table-responsive">
+    <table class="table table-bordered table-hover">
+      <thead class="table-dark">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Category</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let d of dishes">
+          <td>{{d.id}}</td>
+          <td>{{d.name}}</td>
+          <td>{{d.price}}</td>
+          <td>{{d.category}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
