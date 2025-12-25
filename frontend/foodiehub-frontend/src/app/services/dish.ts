@@ -7,7 +7,8 @@ import { Observable } from 'rxjs';
 })
 export class DishApi {
 
-  private baseUrl = "http://localhost:8080/api/dishes";
+  // private baseUrl = "http://localhost:8080/api/dishes";
+  private baseUrl ="http://ec2-98-82-32-22.compute-1.amazonaws.com:8080/api/dishes";
 
   constructor(private http: HttpClient) {}
 

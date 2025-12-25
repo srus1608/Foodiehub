@@ -7,7 +7,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class RestaurantApi {
-  private baseUrl = "http://localhost:8080/api/restaurants";
+  // private baseUrl = "http://localhost:8080/api/restaurants";
+  private baseUrl = "http://ec2-98-82-32-22.compute-1.amazonaws.com:8080/api/restaurants";
+
 
   constructor(private http: HttpClient) { }
 

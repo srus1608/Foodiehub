@@ -7,7 +7,8 @@ import { Observable } from 'rxjs';
 })
 export class OrderApi {
 
-  private baseUrl = "http://localhost:8080/api/orders";
+  // private baseUrl = "http://localhost:8080/api/orders";
+  private baseUrl ="http://ec2-98-82-32-22.compute-1.amazonaws.com:8080/api/orders";
 
   constructor(private http: HttpClient) {}
 
